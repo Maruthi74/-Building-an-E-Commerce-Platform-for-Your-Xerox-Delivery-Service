@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Price Calculation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .images {
+            display: flex;
+            gap: 10px;
+        }
+        .images img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Price Calculation</h2>
+        <div class="section">
+            <h3>White and Black</h3>
+            <p>Single side = <span class="highlight">No. of pages x 1.5 = Total price + delivery charge.</span></p>
+            <p>Both side = <span class="highlight">(No. of pages x 1.5)/(2) = Total price + delivery charge.</span></p>
+            <p>1/4 (In horizontal front 2 pages back 2 pages) = <span class="highlight">(No. of pages x 1.5)/(4) = Total price + delivery charge.</span></p>
+        </div>
+        <div class="section">
+            <h3>Colour</h3>
+            <p>Only single side normal paper (A4) = <span class="highlight">No. of pages x 3 = Total price + delivery charge.</span></p>
+            <p>Only single side bond paper (A4) = <span class="highlight">No. of pages x 3.5 = Total price + delivery charge.</span></p>
+            <p><strong>Note:</strong> If you need binding = <span class="highlight">Total price + binding price + delivery charge.</span></p>
+        </div>
+        <h2>Page Range Selection</h2>
+        <p>There are two options: 1) All Pages, or 2) Custom Pages. If you choose Custom, specify the page numbers you want to print.</p>
+        
+        <h2>Side Preference</h2>
+        <div class="images">
+            <img src="one_side.png" alt="One Side Printing">
+            <img src="both_side.png" alt="Both Side Printing">
+            <img src="horizontal.png" alt="Horizontal 2 Front & 2 Back">
+        </div>
+        
+        <h2>Bindings</h2>
+        <div class="images">
+            <img src="binding1.png" alt="Binding Type 1">
+            <img src="binding2.png" alt="Binding Type 2">
+            <img src="binding3.png" alt="Binding Type 3">
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
